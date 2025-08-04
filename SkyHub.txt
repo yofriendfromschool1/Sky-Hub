@@ -428,7 +428,7 @@ elseif game.PlaceId == 7991339063 or game.PlaceId == 13622985049 or game.PlaceId
 elseif game.PlaceId == 5985232436 then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/games/infectioussmile.lua'))()
 -- Colony Survival
-elseif game.PlaceId == 14888386963 or game.PlaceId == 14972061219 then
+elseif game.PlaceId == 14888386963 or game.PlaceId == 14972061219 or game.PlaceId == 17362847861 then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/games/colonysurvival.lua'))()
 -- Red Light, Green Light
 elseif game.PlaceId == 7540891731 or game.PlaceId == 7577073048 then
