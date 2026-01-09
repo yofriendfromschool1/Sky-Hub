@@ -94,4 +94,4 @@ Welcome to Sky-Hub, a collection of scripts and tools primarily for Roblox games
 [LICENSE](/LICENSE)
 
 ---
-*Last Updated: October 2, 2025*
+*Last Updated: October 2, 2024*
