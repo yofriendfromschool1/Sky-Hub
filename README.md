@@ -68,7 +68,7 @@ Welcome to Sky-Hub, a collection of scripts and tools primarily for Roblox games
         * **Spread Radius:** Reduces effectiveness but widens the fling radius.
         * **Focus One Radius:** Increases effectiveness but narrows the fling radius.
 
-* **Trolling GUIs:** Front-end (FE) trolling GUIs are available for various games to add an element of fun and chaos to your gameplay.
+* **Trolling GUIs:** Filtering Enabled (FE) trolling GUIs are available for various games to add an element of fun and chaos to your gameplay.
 
 * **Script Management:** Sky-Hub includes various other scripts and tools, often categorized for specific purposes or games.
 
