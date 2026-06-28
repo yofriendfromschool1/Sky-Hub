@@ -84,6 +84,12 @@ Welcome to Sky-Hub, a collection of scripts and tools primarily for Roblox games
 
 **yofriendfromschool1** is a Computer Science student with a passion for problem-solving and software development. Their interests span web design, web development, AI & automation, reverse-engineering, networking, pen-testing, and more. They are always open to learning new technologies and collaborating on exciting projects.
 
+## How To use
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
+```
+
 ## Contributions & Forks
 
 * This project is a fork of `SkyIsntFound1/I-Quit-GT-Modding.`.
