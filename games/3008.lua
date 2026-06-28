@@ -329,6 +329,27 @@ MainSection:NewButton("Disable Fall Damage", "no fall damage if u die tho u have
 		Library.Notify("WARNING", "ALREADY ENABLED", 5)
 	end
 end)
+MainSection:NewButton("Remove Fog", "removes fog tooken from inf yield", function()
+	Services = setmetatable({}, {
+		__index = function(self, name)
+			local success, cache = pcall(function()
+				return cloneref(game:GetService(name))
+			end)
+			if success then
+				rawset(self, name, cache)
+				return cache
+			else
+				error("Invalid Service: " .. tostring(name))
+			end
+		end
+	})
+	Services.Lighting.FogEnd = 100000
+	for i,v in pairs(Lighting:GetDescendants()) do
+		if v:IsA("Atmosphere") then
+			v:Destroy()
+		end
+	end
+end)
 MainSection:NewTextBox("grab food", "grabs food put number of food here and drops it and og pos", function(txt)
 	local TimesToTeleport = tonumber(txt) --how much food you want to get
 	local Radius = 100 --DO NOT CHANGE
@@ -411,15 +432,90 @@ MainSection:NewTextBox("grab food", "grabs food put number of food here and drop
 	end
 end)
 MainSection:NewTextBox("teleport to player", "teleport to player by teleporting around the map until their character is loaded may take a while.", function(txt)
-	for i, v in pairs(game:GetService("Players"):GetPlayers()) do
-		if string.sub(string.lower(v.Name), 0, #txt) == string.lower(txt) or string.sub(string.lower(v.DisplayName), 0, #txt) == string.lower(txt) and v ~= game:GetService("Players").LocalPlayer then
-			repeat
-				game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(math.random(1, 2547), 25, math.random(10, 2541))
-				task.wait()
-			until v.Character:FindFirstChild("HumanoidRootPart")
-			game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character.HumanoidRootPart.CFrame
-		end
-	end
+    local Players = game:GetService("Players")
+    local localPlayer = Players.LocalPlayer
+    
+    if #txt < 1 then
+        warn("Please enter a player name.")
+        return
+    end
+    
+    -- Find target player (first match)
+    local targetPlayer = nil
+    local searchLower = string.lower(txt)
+    
+    for _, v in pairs(Players:GetPlayers()) do
+        if v ~= localPlayer then
+            local nameMatch = string.sub(string.lower(v.Name), 1, #txt) == searchLower
+            local displayMatch = string.sub(string.lower(v.DisplayName), 1, #txt) == searchLower
+            
+            if nameMatch or displayMatch then
+                targetPlayer = v
+                break
+            end
+        end
+    end
+    
+    if not targetPlayer then
+        warn("No player found matching: " .. txt)
+        return
+    end
+    
+    -- Get local HRP
+    local hrp = localPlayer.Character:WaitForChild("HumanoidRootPart")
+    
+    -- If already loaded, teleport immediately
+    if targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+        hrp.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame
+        print("Player already loaded, teleported directly.")
+        return
+    end
+    
+    -- Grid search configuration
+    local xMin, xMax = 1, 2547
+    local zMin, zMax = 10, 2541
+    local yMin, yMax = 25, 1912
+    local yStep = 35
+    local xzStep = 400        -- Lower = more thorough but slower (try 250-500)
+    local waitTime = 0.08     -- Delay between teleports to allow streaming
+    
+    print("Scanning for " .. targetPlayer.Name .. "...")
+    
+    -- Scan Y from bottom to top
+    for y = yMin, yMax, yStep do
+        -- At each Y level, scan ALL X and Z positions first
+        for x = xMin, xMax, xzStep do
+            for z = zMin, zMax, xzStep do
+                -- Safety: target left the game
+                if not targetPlayer.Parent then
+                    warn("Target left the game.")
+                    return
+                end
+                
+                -- Safety: local character died/reset
+                if not localPlayer.Character or not localPlayer.Character:FindFirstChild("HumanoidRootPart") then
+                    warn("Local character missing.")
+                    return
+                end
+                
+                -- Check if target character loaded
+                if targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+                    hrp.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame
+                    print("Found " .. targetPlayer.Name .. "! Teleported.")
+                    return
+                end
+                
+                -- Teleport to grid position
+                pcall(function()
+                    hrp.CFrame = CFrame.new(x, y, z)
+                end)
+                
+                task.wait(waitTime)
+            end
+        end
+    end
+    
+    warn("Could not find " .. targetPlayer.Name .. ". They may be in a different dimension/server.")
 end)
 MainSection:NewTextBox("teleport to player", "teleport to player 2 THEY MUST HAVE A TOOL OUT WITH A PART IN IT OR ELSE IT WILL NOT WORK", function(txt)
 	for i, v in pairs(game:GetService("Players"):GetPlayers()) do
