@@ -325,9 +325,9 @@ MainSection:NewButton("Infinite Stamina", "stamina set to 9999", function()
 	game:GetService("RunService").Heartbeat:Connect(function()
 		if game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character.Parent then
 			game:GetService("Players").LocalPlayer.Character:SetAttribute("Stamina", 9999)
-			Library.Notify("Infinite Stamina Enabled", "stamina set to 9999", 5)
 		end
 	end)
+	Library.Notify("Infinite Stamina Enabled", "stamina set to 9999", 5)
 end)
 MainSection:NewDropdown("Emote selector", "selects the emote you want to use", {
 	"Griddy",
