@@ -9,14 +9,14 @@ Work At A Pizza Place, VR Hands, Adopt Me, Jailbreak, Prison Life,
 Build A Boat For Treasure, Gorilla Tag Professional, Murder Mystery 2, Blox Fruits, Counter Blox, Mic Up, Neighbors, Natural Disaster Survival, Ro-Ghoul, Blade Ball, Pet Simulator X,
 Pet Simulator 99, Legends of Speed, BrookHaven RP, Bedwars, CHAOS, Ninja Legends, Bayside High School, BIG PaintBall!, BIG PaintBall 2!, Muscle Legends, Road to Grambys, Bloxburg, Cursed Sea, Doors,
 Hide and Seek Extreme, Life in Paradise, Adopt and Raise a Baby, Zombie Attack, Super Simon Says, Life Sentence, Rainbow Friends, Infectious Smile, Colony Survival, Red Light, Green Light, 3008, 
-Guess the drawing!, VR Hangout, VR Hands Legacy, RIVALS, Lifting Simulator and Universal.
+Guess the drawing!, VR Hangout, VR Hands Legacy, RIVALS, Lifting Simulator, Death Penalty and Universal.
 50+ games (Including some obbys)
 
 Rebuilt On IllusionHub
 
-Last Updated 10/02/2024
+Last Updated 7/3/2026
 
-fixed scroll list limit (hiding sum tabs on universal mode) and added RIVALS and Lifting Simulator, removed rejgames.
+added death penalty.
 Library by Lua_u (modified by jazminethecooles2001)
 
 executor ui in fencing and universal made by espresso0069
