@@ -58,6 +58,7 @@ Welcome to Sky-Hub, a collection of scripts and tools primarily for Roblox games
     * VR Hands Legacy
     * RIVALS
     * Lifting Simulator
+    * Death Penalty
     * Universal
     * (and many more obbys and games!)
 
@@ -86,8 +87,29 @@ Welcome to Sky-Hub, a collection of scripts and tools primarily for Roblox games
 
 ## How To use
 
+- Sky Hub
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
+```
+- FE Trolling GUI
+FE Trolling GUI
+
+By Sky/jazminethecooles2001
+
+Last Updated 7/7/2025
+
+added some more scripts bc why not
+
+Games Tab: Auto Rap Battles and Fashion Famous
+
+Thank you MasterMZ for reviewing!
+
+If you want me to add anything let me know in the discord or dm me
+
+https://discord.gg/xPDF3DkKhk
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
 ```
 
 ## Contributions & Forks
