@@ -451,6 +451,9 @@ elseif game.PlaceId == 17625359962 or game.PlaceId == 18126510175 then
 elseif game.PlaceId == 3652625463 then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/games/liftingsimulator.lua'))()
 -- Lifting Simulator
+elseif game.PlaceId == 15654981113 or game.PlaceId == 15875230635 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/games/deathpenalty.lua'))()
+-- Death Penalty
 else
 -- Universal
 	local Library = loadstring(game:HttpGet(_G.guidragtype))()
