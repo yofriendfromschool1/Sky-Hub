@@ -59,6 +59,7 @@ Welcome to Sky-Hub, a collection of scripts and tools primarily for Roblox games
     * RIVALS
     * Lifting Simulator
     * Death Penalty
+    * Infinite Nights With Freddy
     * Universal
     * (and many more obbys and games!)
 
