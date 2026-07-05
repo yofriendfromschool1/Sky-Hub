@@ -30,7 +30,13 @@ IF YOU WANT ME TO ADD A GAME OR REPORT A BUG JOIN MY DISCORD SERVER OR DM ME
 https://discord.gg/xPDF3DkKhk
 
 ]]--
-if game:GetService("CoreGui"):FindFirstChild("incognito") then
+local successsss, errorrrr = pcall(function()
+	local water = 1
+	local waters = 2
+	water += 2
+	print(water)
+end)
+if game:GetService("CoreGui"):FindFirstChild("incognito") or not successsss then
     oldstring = loadstring
     getfenv().loadstring = function(code)
         local source = code
@@ -50,6 +56,28 @@ local settings = {
 	opaque = 0.4;
 }
 queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+if not queueteleport and (isfolder and makefolder and writefile and listfiles and delfile) then
+	-- must have write file
+	-- put in auto exec
+	if not isfolder("queue") then
+	    makefolder("queue")
+	end
+	local rs = math.random(1,999999)
+	getgenv().queue_on_teleport = function(code)
+	    writefile("queue\\"..tostring(rs)..".lua", code)
+	end
+	--queue_on_teleport("testy")
+	local files = listfiles("queue")
+	if #files == 0 then
+	    return
+	end
+	for i, v in pairs(files) do
+	    pcall(function()
+	        loadstring(readfile(v))()
+	    end)
+	    delfile(v)
+	end
+end
 httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 HttpService = game:GetService("HttpService")
 everyClipboard = setclipboard or toclipboard or set_clipboard or setrbxclipboard or (Clipboard and Clipboard.set)
