@@ -329,88 +329,128 @@ MainSection:NewToggle("Always Green/Win Gamble", "teleports ball into green and 
 		end
 	end
 end)
-MainSection:NewToggle("ESP", "ESP of all players and It will be red and hiders are green", function(state)
-	getgenv().espEnabled = state
-	local players = game:GetService("Players")
-	local runService = game:GetService("RunService")
-	local function createHighlight(player)
-		local highlight = Instance.new("Highlight")
-		highlight.Parent = player.Character
-		local hasSparkles = player.Character:FindFirstChild("HumanoidRootPart") and player.Character.HumanoidRootPart:FindFirstChild("Sparkles")
-		highlight.FillColor = hasSparkles and Color3.new(1, 0, 0) or Color3.new(0, 1, 0)
-		highlight.OutlineColor = Color3.new(0, 0, 0)
-		local billboardGui = Instance.new("BillboardGui")
-		billboardGui.Adornee = player.Character:FindFirstChild("Head")
-		billboardGui.Parent = player.Character
-		billboardGui.Size = UDim2.new(0, 100, 0, 50)
-		billboardGui.AlwaysOnTop = true
-		billboardGui.MaxDistance = 100
-		local textLabel = Instance.new("TextLabel")
-		textLabel.Parent = billboardGui
-		textLabel.Size = UDim2.new(1, 0, 1, 0)
-		textLabel.BackgroundTransparency = 1
-		textLabel.Text = hasSparkles and "IT" or "Hider"
-		textLabel.TextColor3 = highlight.FillColor
-		textLabel.Font = Enum.Font.SourceSans
-		textLabel.TextScaled = true
-		textLabel.TextStrokeColor3 = Color3.new(0, 0, 0)
-		textLabel.TextStrokeTransparency = 0
-		return highlight, billboardGui
+MainSection:NewButton("delete animatronics", "deletes animatronics locally only though wont work online creds to MrkKslight on scriptblox.com", function()
+	local animatronics = game:GetService("Workspace"):FindFirstChild("Animatronics")
+
+	if animatronics then  
+		animatronics:ClearAllChildren()  
+		print("Animatronics folder has been purged.")  
+	else  
+		warn("Could not find the Animatronics folder!")  
 	end
-	local highlighted = {}
-	local billboards = {}
-	local function updateESP()
-		local localPlayer = players.LocalPlayer
-		for _, player in ipairs(players:GetPlayers()) do
-			if player ~= localPlayer then
-				if player.Character and not highlighted[player.Name] then
-					highlighted[player.Name], billboards[player.Name] = createHighlight(player)
-				elseif player.Character and highlighted[player.Name] then
-					local hasSparkles = player.Character:FindFirstChild("HumanoidRootPart") and player.Character.HumanoidRootPart:FindFirstChild("Sparkles")
-					local currentColor = hasSparkles and Color3.new(1, 0, 0) or Color3.new(0, 1, 0)
-					if highlighted[player.Name].FillColor ~= currentColor then
-						highlighted[player.Name].FillColor = currentColor
-						local billboardGui = billboards[player.Name]
-						if billboardGui and billboardGui:FindFirstChild("TextLabel") then
-							billboardGui.TextLabel.Text = hasSparkles and "IT" or "Hider"
-							billboardGui.TextLabel.TextColor3 = currentColor
-						end
-					end
-				end
-			end
-		end
-		for playerName, highlight in pairs(highlighted) do
-			if not players:FindFirstChild(playerName) or playerName == localPlayer.Name then
-				if highlight then
-					highlight:Destroy()
-				end
-				highlighted[playerName] = nil
-				if billboards[playerName] then
-					billboards[playerName]:Destroy()
-					billboards[playerName] = nil
-				end
-			end
-		end
-	end
-	runService.Heartbeat:Connect(function()
-		if getgenv().espEnabled then
-			updateESP()
-		else
-			for _, highlight in pairs(highlighted) do
-				if highlight then
-					highlight:Destroy()
-				end
-			end
-			highlighted = {}
-			for _, billboard in pairs(billboards) do
-				if billboard then
-					billboard:Destroy()
-				end
-			end
-			billboards = {}
-		end
-	end)
 end)
+
+MainSection:NewToggle("Trash ESP", "ESP trash around the map", function(state)
+    getgenv().trashespEnabled = state
+
+
+    local function cleanup()
+        local trashFolder = game:GetService("Workspace"):FindFirstChild("Map")
+        if trashFolder and trashFolder:FindFirstChild("Trash") and trashFolder.Trash:FindFirstChild("CurrentTrash") then
+            for _, child in ipairs(trashFolder.Trash.CurrentTrash:GetDescendants()) do
+                if child:IsA("Highlight") and child.Name == "trashesp" then
+                    child:Destroy()
+                end
+            end
+        end
+    end
+
+    if not state then
+        cleanup()
+        return
+    end
+
+    task.spawn(function()
+        while getgenv().trashespEnabled do
+          
+            local map = game:GetService("Workspace"):FindFirstChild("Map")
+            
+            if map and map:FindFirstChild("Trash") and map.Trash:FindFirstChild("CurrentTrash") then
+                local currentTrash = map.Trash.CurrentTrash
+                
+              
+                for _, v in pairs(currentTrash:GetChildren()) do
+                    
+                   
+                    if v:IsA("MeshPart") or v:IsA("BasePart") or v:IsA("Model") then
+                        
+                        
+                        if not v:FindFirstChild("trashesp") then
+                            local highlight = Instance.new("Highlight")
+                            highlight.Name = "trashesp"
+                            highlight.Adornee = v
+                            highlight.FillColor = Color3.new(0, 1, 0)
+                            highlight.OutlineColor = Color3.new(1, 1, 1)
+                            highlight.FillTransparency = 0.5
+                            highlight.OutlineTransparency = 0
+                            highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                            highlight.Parent = v
+                        end
+                        
+                    end
+                end
+            end
+            task.wait(0.5)
+        end
+        
+        
+        cleanup()
+    end)
+end)
+
+MainSection:NewToggle("Animatronics ESP", "ESP animatronics around the map", function(state)
+    getgenv().AnimatronicsEspEnabled = state
+
+    local animatronicsFolder = game:GetService("Workspace"):FindFirstChild("Animatronics")
+
+    
+    local function cleanup()
+        if animatronicsFolder then
+            for _, child in ipairs(animatronicsFolder:GetDescendants()) do
+                if child:IsA("Highlight") and child.Name == "animatronicsesp" then
+                    child:Destroy()
+                end
+            end
+        end
+    end
+
+    if not state then
+        cleanup()
+        return
+    end
+
+    task.spawn(function()
+        while getgenv().AnimatronicsEspEnabled do
+            if animatronicsFolder then
+               
+                for _, animatronic in pairs(animatronicsFolder:GetChildren()) do
+                    
+                    
+                    if animatronic:IsA("Model") then
+                        
+                        
+                        if not animatronic:FindFirstChild("animatronicsesp") then
+                            local highlight = Instance.new("Highlight")
+                            highlight.Name = "animatronicsesp"
+                            highlight.Adornee = animatronic
+                            highlight.FillColor = Color3.new(0, 1, 0)
+                            highlight.OutlineColor = Color3.new(1, 1, 1)
+                            highlight.FillTransparency = 0.5
+                            highlight.OutlineTransparency = 0
+                            highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                            highlight.Parent = animatronic
+                        end
+                        
+                    end
+                end
+            end
+            task.wait(0.5) 
+        end
+        
+        cleanup() 
+    end)
+end)
+
 local Discord = Window:NewTab("Discords", 16795709379)
 local DiscordSection = Discord:NewSection("Discords")
 DiscordSection:NewButton("Discord Invite", "copys discord link", function()
