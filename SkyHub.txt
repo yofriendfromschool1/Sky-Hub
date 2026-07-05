@@ -9,14 +9,14 @@ Work At A Pizza Place, VR Hands, Adopt Me, Jailbreak, Prison Life,
 Build A Boat For Treasure, Gorilla Tag Professional, Murder Mystery 2, Blox Fruits, Counter Blox, Mic Up, Neighbors, Natural Disaster Survival, Ro-Ghoul, Blade Ball, Pet Simulator X,
 Pet Simulator 99, Legends of Speed, BrookHaven RP, Bedwars, CHAOS, Ninja Legends, Bayside High School, BIG PaintBall!, BIG PaintBall 2!, Muscle Legends, Road to Grambys, Bloxburg, Cursed Sea, Doors,
 Hide and Seek Extreme, Life in Paradise, Adopt and Raise a Baby, Zombie Attack, Super Simon Says, Life Sentence, Rainbow Friends, Infectious Smile, Colony Survival, Red Light, Green Light, 3008, 
-Guess the drawing!, VR Hangout, VR Hands Legacy, RIVALS, Lifting Simulator, Death Penalty and Universal.
+Guess the drawing!, VR Hangout, VR Hands Legacy, RIVALS, Lifting Simulator, Death Penalty, Infinite Nights With Freddy and Universal.
 50+ games (Including some obbys)
 
 Rebuilt On IllusionHub
 
-Last Updated 7/3/2026
+Last Updated 7/5/2026
 
-added death penalty.
+added Infinite Nights With Freddy.
 Library by Lua_u (modified by jazminethecooles2001)
 
 executor ui in fencing and universal made by espresso0069
@@ -482,6 +482,9 @@ elseif game.PlaceId == 3652625463 then
 elseif game.PlaceId == 15654981113 or game.PlaceId == 15875230635 then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/games/deathpenalty.lua'))()
 -- Death Penalty
+elseif game.PlaceId == 92415748858497 or game.PlaceId == 81156978660382 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/games/infinitenightswithfreddy.lua'))()
+-- Infinite Nights With Freddy
 else
 -- Universal
 	local Library = loadstring(game:HttpGet(_G.guidragtype))()
