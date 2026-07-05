@@ -50,4 +50,6 @@ return {
     {name = "VR Hands Legacy", placeId = 16912831373},
     {name = "RIVALS", placeId = 17625359962},
     {name = "Lifting Simulator", placeId = 3652625463},
+    {name = "Death Penalty", placeId = 15654981113},
+    {name = "Infinite Nights With Freddy", placeId = 92415748858497},
 }
