@@ -465,7 +465,7 @@ elseif game.PlaceId == 7540891731 or game.PlaceId == 7577073048 then
 elseif game.PlaceId == 2768379856 then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/games/3008.lua'))()
 -- Guess the drawing!
-elseif game.PlaceId == 3281073759 then
+elseif game.PlaceId == 3281073759 or game.PlaceId == 18655392006 then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/games/guessthedrawing.lua'))()
 -- VR Hangout
 elseif game.PlaceId == 8769714622 then
