@@ -462,7 +462,7 @@ MainSection:NewToggle("block drawer cam", "blocks the person drawing camera", fu
 			if stoppls then
 				break
 			end
-			game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(0, 26, -66.5)
+			game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-2, 26, -68)
 			task.wait()
 		until blocking == false
 	else
