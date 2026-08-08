@@ -358,7 +358,7 @@ MainSection:NewToggle("guess all words", "guesses all words but takes so fucking
 		local args = {
 			[1] = v
 		}
-		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("guess"):FireClient(unpack(args))
+		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 		warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
 		task.wait(0.4)
 	end
@@ -376,7 +376,7 @@ MainSection:NewTextBox("put amount of letters here to guess", "put amount of let
 			local args = {
 				[1] = v
 			}
-			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("guess"):FireClient(unpack(args))
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 			warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
 			task.wait(0.4)
 		end
@@ -398,7 +398,7 @@ MainSection:NewTextBox("put catergory of things to guess", "put catergory of thi
 				local args = {
 					[1] = v
 				}
-				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("guess"):FireClient(unpack(args))
+				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 				warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
 				task.wait(0.4)
 			end
@@ -423,7 +423,7 @@ MainSection:NewTextBox("put exactly what u see at the top for like __x__ or wtv"
 			local args = {
 				[1] = v
 			}
-			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("guess"):FireClient(unpack(args))
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 			warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
 			task.wait(0.4)
 		end
@@ -433,7 +433,7 @@ MainSection:NewTextBox("say something while drawing", "u can say stuff while bei
 	local args = {
 		[1] = txt
 	}
-	game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("guess"):FireClient(unpack(args))
+	game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 end)
 MainSection:NewToggle("chat spam", "spams chat with -", function(state)
 	getgenv().whywontustop = state
@@ -446,7 +446,7 @@ MainSection:NewToggle("chat spam", "spams chat with -", function(state)
 			local args = {
 				[1] = line
 			}
-			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("guess"):FireClient(unpack(args))
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 			task.wait(0.4)
 		end
 	end)
