@@ -338,15 +338,501 @@ MainSection:NewButton("FE Trolling GUI", "Troll", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
 end)
 	-- SORRY THAT ITS NOT 100% BUT I WILL KEEP ADDING WORDS UNTIL IT ISSSSS
--- more words will be added on im pretty sure this is a lot tho and maybe get it right 75% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
+-- more words will be added on im pretty sure this is a lot tho and maybe get it right 95% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
 		-- if there arent any words that are on here but is in the game let me know at discord: jasminethecoolest2001
-local words = {["object"] = "waterwheel",["objecta"] = "pot",["objectb"] = "laptop",["objectc"] = "camera",["objectd"] = "sword",["objecte"] = "watch",["objectf"] = "recycle",["objectg"] = "ruler",["objecth"] = "bell",["objecti"] = "light",["objectj"] = "axe",["objectk"] = "cup",["objectl"] = "fan",["objectm"] = "rock",["objectn"] = "vase",["objecto"] = "hat",["objectp"] = "megaphone",["objectq"] = "unicycle",["objectr"] = "buckle",["objects"] = "arrow",["objectt"] = "ring",["objectu"] = "anvil",["objectv"] = "paintbrush",["objectw"] = "lamp",["objecty"] = "bucket",["objectz"] = "drone",["objectza"] = "coin",["objectzb"] = "table",["objectzc"] = "crown",["objectzd"] = "pickaxe",["objectze"] = "lipstick",["objectzf"] = "magnet",["objectzg"] = "computer",["objectzh"] = "chest",["objectzi"] = "brush",["objectzj"] = "compass",["objectzk"] = "cap",["objectzl"] = "wheel",["objectzm"] = "ball",["material"] = "gold",["materiala"] = "diamond",["fruit"] = "melon",["fruita"] = "apple",["fruitb"] = "corn",["fruitc"] = "orange",["fruitd"] = "strawberry",["fruite"] = "tomato",["fruitf"] = "banana",["other"] = "mcdonalds",["othera"] = "earth",["otherb"] = "tree",["otherc"] = "arm",["otherd"] = "mouth",["othere"] = "mountain",["otherf"] = "circle",["otherg"] = "pool",["otherh"] = "hand",["otheri"] = "chips",["otherj"] = "juice",["otherk"] = "space",["otherl"] = "ocean",["otherm"] = "brain",["othern"] = "forest",["othero"] = "sleeping",["otherp"] = "house",["otherq"] = "music",["otherr"] = "moon",["others"] = "boot",["othert"] = "box",["otheru"] = "pants",["otherv"] = "alarm clock",["otherw"] = "door knob",["otherx"] = "elevator",["othery"] = "rocket",["otherz"] = "calendar",["otherza"] = "leg",["otherzb"] = "head",["otherzc"] = "fire",["otherzd"] = "toast",["otherze"] = "farm",["otherzf"] = "square",["otherzg"] = "jail",["otherzh"] = "wall",["otherzi"] = "bomb",["otherzj"] = "nail",["otherzk"] = "snowball",["otherzl"] = "ceiling",["otherzm"] = "pacifier",["otherzn"] = "pen",["otherzo"] = "tire",["otherzp"] = "seatbelt",["otherzq"] = "heart",["otherzr"] = "library",["otherzs"] = "mail",["otherzt"] = "snow",["otherzu"] = "nose",["otherzv"] = "iceberg",["otherzw"] = "scissors",["otherzy"] = "swing",["otherzz"] = "cake",["otherzza"] = "birthday",["otherzzb"] = "bubbles",["otherzzc"] = "ballon",["otherzzd"] = "chain saw",["otherzze"] = "gift",["otherzzf"] = "fries",["otherzzg"] = "egg",["otherzzh"] = "bridge",["otherzzi"] = "jetpack",["otherzzj"] = "windmill",["otherzzk"] = "sun",["otherzzl"] = "running",["otherzzm"] = "snowman",["otherzzn"] = "television",["otherzzo"] = "roller coaster",["otherzzp"] = "beard",["otherzzq"] = "chandelier",["otherzzr"] = "socks",["otherzzs"] = "chips",["otherzzt"] = "money",["otherzzu"] = "eyebrows",["otherzzv"] = "bed",["otherzzw"] = "rug",["otherzzy"] = "water",["otherzzz"] = "fence",["otherzzza"] = "trampoline",["otherzzzb"] = "cloud",["otherzzzc"] = "sunburn",["otherzzzd"] = "stork",["otherzzze"] = "gum",["otherzzzf"] = "bedroom",["otherzzzg"] = "eiffel tower",["otherzzzh"] = "lollipop",["otherzzzi"] = "home",["otherzzzj"] = "pencil",["otherzzzk"] = "belt",["otherzzzl"] = "tent",["otherzzzm"] = "flag",["otherzzzn"] = "kettle",["otherzzzo"] = "rain",["otherzzzp"] = "toothpaste",["otherzzzq"] = "tower",["otherzzzr"] = "ear",["otherzzzs"] = "jump rope",["otherzzzt"] = "sushi",["otherzzzu"] = "school",["noun"] = "ninja",["nouna"] = "zombie",["nounb"] = "pirate",["nounc"] = "robot",["nound"] = "doctor",["noune"] = "baby",["nounf"] = "teacher",["emotions"] = "sad",["emotionsa"] = "angry",["animal"] = "starfish",["animala"] = "bear",["animalb"] = "fish",["animalc"] = "jellyfish",["animald"] = "mouse",["animale"] = "tiger",["animalf"] = "ant",["animalg"] = "squid",["animalh"] = "mermaid",["animali"] = "lion",["animalj"] = "pig",["animalk"] = "elephant",["animall"] = "dolphin",["animalm"] = "shark",["animaln"] = "dinosaur",["animalo"] = "rabbit",["animalp"] = "bee",["animalq"] = "dog",["animalr"] = "kangaroo",["animals"] = "eel",["animalt"] = "crab",["animalu"] = "camel",["animalv"] = "chicken",["animalw"] = "tadpole",["animaly"] = "giraffe",["animalz"] = "frog",["animalza"] = "octopus",["animalzb"] = "sheep",["animalzc"] = "duck",["animalzd"] = "alligator",["animalze"] = "turtle",["animalzf"] = "scorpion",["animalzg"] = "crocodile",["animalzh"] = "snail",["animalzi"] = "whale",["animalzj"] = "kitten",["vehicle"] = "bus",["vehiclea"] = "minivan",["vehicleb"] = "boat",["vehiclec"] = "helicopter",["vehicled"] = "tricycle",["vehiclee"] = "train",["objectzn"] = "shovel",["objectzo"] = "mirror",["objectzp"] = "bow",["objectzq"] = "gun",["objectzr"] = "knife",["objectzs"] = "doll",["objectzt"] = "deodorant",["objectzu"] = "door",["objectzv"] = "curtain",["objectzw"] = "engine",["objectzx"] = "bandage",["objectzy"] = "helmet",["objectzz"] = "soap",["objectzza"] = "mask",["objectzzb"] = "phone",["objectzzc"] = "crib",["objectzzd"] = "crayon",["objectzze"] = "coffin",["objectzzf"] = "microwave",["objectzzg"] = "desk",["objectzzh"] = "bag",["objectzzi"] = "fork",["objectzzj"] = "spoon",["objectzzk"] = "puzzle",["objectzzl"] = "wheelchair",["objectzzm"] = "basket",["objectzzn"] = "torch",["objectzzo"] = "umbrella",["objectzzp"] = "comb",["objectzzq"] = "sponge",["objectzzr"] = "toy",["objectzzs"] = "traffic cone",["objectzzt"] = "eyepatch",["objectzzu"] = "paint",["objectzzv"] = "toothbrush",["objectzzw"] = "flashlight",["objectzzx"] = "frying pan",["objectzzy"] = "gold medal",["objectzzz"] = "dice",["objectzzza"] = "clock",["objectzzzb"] = "backpack",["objectzzzc"] = "paper",["objectzzzd"] = "wallet",["objectzzze"] = "window",["objectzzzf"] = "hammer",["materialb"] = "oil",["materialc"] = "salt",["fruitg"] = "lemon",["fruith"] = "cherry",["fruiti"] = "carrot",["fruitj"] = "cucumber",["fruitk"] = "pineapple",["fruitl"] = "grapes",["fruitm"] = "kiwi",["fruitn"] = "peanut",["otherzzzv"] = "flower",["otherzzzw"] = "stairs",["otherzzzx"] = "slide",["otherzzzy"] = "feather",["otherzzzz"] = "forehead",["otherzzzza"] = "minecraft",["otherzzzzb"] = "dance",["otherzzzzc"] = "milk",["otherzzzzd"] = "ice cream",["otherzzzze"] = "japan",["otherzzzzf"] = "eyes",["otherzzzzg"] = "ice",["otherzzzzh"] = "pancakes",["otherzzzzi"] = "chocolate",["otherzzzzj"] = "hotel",["otherzzzzk"] = "motel",["otherzzzzl"] = "fireworks",["otherzzzzm"] = "lighthouse",["otherzzzzn"] = "raindrop",["otherzzzzo"] = "blizzard",["otherzzzzp"] = "snowflake",["otherzzzzq"] = "sand",["otherzzzzr"] = "lightning",["otherzzzzs"] = "face",["otherzzzzt"] = "pizza",["otherzzzzu"] = "heel",["otherzzzzv"] = "volcano",["otherzzzzw"] = "triangle",["otherzzzzx"] = "seed",["otherzzzzy"] = "waterdrop",["otherzzzzz"] = "trash",["otherzzzzza"] = "cactus",["otherzzzzzb"] = "bone",["otherzzzzzc"] = "sea",["otherzzzzzd"] = "plant",["otherzzzzze"] = "roof",["otherzzzzzf"] = "towel",["otherzzzzzg"] = "armpit",["otherzzzzzh"] = "castle",["otherzzzzzi"] = "playground",["otherzzzzzj"] = "beehive",["otherzzzzzk"] = "dog house",["otherzzzzzl"] = "mushroom",["otherzzzzzm"] = "grass",["otherzzzzzn"] = "shell",["otherzzzzzo"] = "jungle",["otherzzzzzp"] = "road",["otherzzzzzq"] = "sandwich",["otherzzzzzr"] = "donut",["otherzzzzzs"] = "cube",["otherzzzzzt"] = "graveyard",["otherzzzzzu"] = "skip",["otherzzzzzv"] = "asteroid",["otherzzzzzw"] = "night",["otherzzzzzx"] = "star",["otherzzzzzy"] = "meteor",["otherzzzzzz"] = "cupcake",["otherzzzzzza"] = "dress",["otherzzzzzzb"] = "shoe",["otherzzzzzzc"] = "jacket",["otherzzzzzzd"] = "cape",["noung"] = "ghost",["nounh"] = "captain",["nouni"] = "alien",["nounj"] = "vampire",["nounk"] = "tourist",["nounl"] = "mechanic",["nounm"] = "queen",["nounn"] = "unicorn",["emotionsb"] = "smile",["emotionsc"] = "dark",["animalzk"] = "squirrel",["animalzl"] = "rhino",["animalzm"] = "cheetah",["animalzn"] = "koala",["animalzo"] = "fox",["animalzp"] = "cat",["animalzq"] = "bunny",["animalzr"] = "flamingo",["animalzs"] = "panda",["animalzt"] = "hippo",["animalzu"] = "cow",["animalzv"] = "zebra",["animalzw"] = "bettle",["animalzx"] = "beetle",["animalzy"] = "ostrich",["animalzz"] = "parrot",["animalzza"] = "deer",["animalzzb"] = "snake",["animalzzc"] = "horse",["animalzzd"] = "puppy",["vehiclef"] = "bike",["vehicleg"] = "bicycle",["vehicleh"] = "ship",["vehiclei"] = "yacht",["vehiclej"] = "skateboard",["sport"] = "football",["sporta"] = "hockey",["sportb"] = "snowboard",["social"] = "facebook",["sociala"] = "roblox"}
-	
+		local words = {
+			-- Objects
+			["object"] = "waterwheel",
+			["objecta"] = "pot",
+			["objectb"] = "laptop",
+			["objectc"] = "camera",
+			["objectd"] = "sword",
+			["objecte"] = "watch",
+			["objectf"] = "recycle",
+			["objectg"] = "ruler",
+			["objecth"] = "bell",
+			["objecti"] = "light",
+			["objectj"] = "axe",
+			["objectk"] = "cup",
+			["objectl"] = "fan",
+			["objectm"] = "rock",
+			["objectn"] = "vase",
+			["objecto"] = "hat",
+			["objectp"] = "megaphone",
+			["objectq"] = "unicycle",
+			["objectr"] = "buckle",
+			["objects"] = "arrow",
+			["objectt"] = "ring",
+			["objectu"] = "anvil",
+			["objectv"] = "paintbrush",
+			["objectw"] = "lamp",
+			["objecty"] = "bucket",
+			["objectz"] = "drone",
+			["objectza"] = "coin",
+			["objectzb"] = "table",
+			["objectzc"] = "crown",
+			["objectzd"] = "pickaxe",
+			["objectze"] = "lipstick",
+			["objectzf"] = "magnet",
+			["objectzg"] = "computer",
+			["objectzh"] = "chest",
+			["objectzi"] = "brush",
+			["objectzj"] = "compass",
+			["objectzk"] = "cap",
+			["objectzl"] = "wheel",
+			["objectzm"] = "ball",
+			["objectzn"] = "shovel",
+			["objectzo"] = "mirror",
+			["objectzp"] = "bow",
+			["objectzq"] = "gun",
+			["objectzr"] = "knife",
+			["objectzs"] = "doll",
+			["objectzt"] = "deodorant",
+			["objectzu"] = "door",
+			["objectzv"] = "curtain",
+			["objectzw"] = "engine",
+			["objectzx"] = "bandage",
+			["objectzy"] = "helmet",
+			["objectzz"] = "soap",
+			["objectzza"] = "mask",
+			["objectzzb"] = "phone",
+			["objectzzc"] = "crib",
+			["objectzzd"] = "crayon",
+			["objectzze"] = "coffin",
+			["objectzzf"] = "microwave",
+			["objectzzg"] = "desk",
+			["objectzzh"] = "bag",
+			["objectzzi"] = "fork",
+			["objectzzj"] = "spoon",
+			["objectzzk"] = "puzzle",
+			["objectzzl"] = "wheelchair",
+			["objectzzm"] = "basket",
+			["objectzzn"] = "torch",
+			["objectzzo"] = "umbrella",
+			["objectzzp"] = "comb",
+			["objectzzq"] = "sponge",
+			["objectzzr"] = "toy",
+			["objectzzs"] = "traffic cone",
+			["objectzzt"] = "eyepatch",
+			["objectzzu"] = "paint",
+			["objectzzv"] = "toothbrush",
+			["objectzzw"] = "flashlight",
+			["objectzzx"] = "frying pan",
+			["objectzzy"] = "gold medal",
+			["objectzzz"] = "dice",
+			["objectzzza"] = "clock",
+			["objectzzzb"] = "backpack",
+			["objectzzzc"] = "paper",
+			["objectzzzd"] = "wallet",
+			["objectzzze"] = "window",
+			["objectzzzf"] = "hammer",
+			["objectzzzg"] = "key",
+			["objectzzzh"] = "tie",
+			["objectzzzi"] = "card",
+			["objectzzzj"] = "book",
+			["objectzzzk"] = "rope",
+			["objectzzzl"] = "spray",
+			["objectzzzm"] = "shirt",
+			["objectzzzn"] = "chair",
+			["objectzzzo"] = "scarf",
+			["objectzzzp"] = "photo",
+			["objectzzzq"] = "piano",
+			["objectzzzr"] = "frame",
+			["objectzzzs"] = "block",
+			["objectzzzt"] = "ladder",
+			["objectzzzu"] = "candle",
+			["objectzzzv"] = "thread",
+			["objectzzzw"] = "guitar",
+			["objectzzzx"] = "teapot",
+			["objectzzzy"] = "bullet",
+			["objectzzzz"] = "pillow",
+			["objectzzzza"] = "eraser",
+			["objectzzzzb"] = "button",
+			["objectzzzzc"] = "cannon",
+			["objectzzzzd"] = "mailbox",
+			["objectzzzze"] = "balloon",
+			["objectzzzzf"] = "glasses",
+			["objectzzzzg"] = "blender",
+			["objectzzzzh"] = "battery",
+			["objectzzzzi"] = "dumbbell",
+			["objectzzzzj"] = "suitcase",
+			["objectzzzzk"] = "necklace",
+			["objectzzzzl"] = "telescope",
+			["objectzzzzm"] = "telephone",
+			["objectzzzzn"] = "sprinkler",
+			["objectzzzzo"] = "stoplight",
+			["objectzzzzp"] = "calculator",
+			["objectzzzzq"] = "stethoscope",
+			["objectzzzzr"] = "microphone",
+			["objectzzzzs"] = "web",
+			["objectzzzzt"] = "shield",
+		
+			-- Materials
+			["material"] = "gold",
+			["materiala"] = "diamond",
+			["materialb"] = "oil",
+			["materialc"] = "salt",
+		
+			-- Fruits & Vegetables
+			["fruit"] = "melon",
+			["fruita"] = "apple",
+			["fruitb"] = "corn",
+			["fruitc"] = "orange",
+			["fruitd"] = "strawberry",
+			["fruite"] = "tomato",
+			["fruitf"] = "banana",
+			["fruitg"] = "lemon",
+			["fruith"] = "cherry",
+			["fruiti"] = "carrot",
+			["fruitj"] = "cucumber",
+			["fruitk"] = "pineapple",
+			["fruitl"] = "grapes",
+			["fruitm"] = "kiwi",
+			["fruitn"] = "peanut",
+			["fruito"] = "mango",
+			["fruitp"] = "potato",
+			["fruitq"] = "pumpkin",
+		
+			-- Nouns & Roles
+			["noun"] = "ninja",
+			["nouna"] = "zombie",
+			["nounb"] = "pirate",
+			["nounc"] = "robot",
+			["nound"] = "doctor",
+			["noune"] = "baby",
+			["nounf"] = "teacher",
+			["noung"] = "ghost",
+			["nounh"] = "captain",
+			["nouni"] = "alien",
+			["nounj"] = "vampire",
+			["nounk"] = "tourist",
+			["nounl"] = "mechanic",
+			["nounm"] = "queen",
+			["nounn"] = "unicorn",
+			["nouno"] = "kid",
+			["nounp"] = "mom",
+			["nounq"] = "king",
+			["nounr"] = "nurse",
+			["nouns"] = "monster",
+		
+			-- Emotions
+			["emotions"] = "sad",
+			["emotionsa"] = "angry",
+			["emotionsb"] = "smile",
+			["emotionsc"] = "dark",
+		
+			-- Animals
+			["animal"] = "starfish",
+			["animala"] = "bear",
+			["animalb"] = "fish",
+			["animalc"] = "jellyfish",
+			["animald"] = "mouse",
+			["animale"] = "tiger",
+			["animalf"] = "ant",
+			["animalg"] = "squid",
+			["animalh"] = "mermaid",
+			["animali"] = "lion",
+			["animalj"] = "pig",
+			["animalk"] = "elephant",
+			["animall"] = "dolphin",
+			["animalm"] = "shark",
+			["animaln"] = "dinosaur",
+			["animalo"] = "rabbit",
+			["animalp"] = "bee",
+			["animalq"] = "dog",
+			["animalr"] = "kangaroo",
+			["animals"] = "eel",
+			["animalt"] = "crab",
+			["animalu"] = "camel",
+			["animalv"] = "chicken",
+			["animalw"] = "tadpole",
+			["animaly"] = "giraffe",
+			["animalz"] = "frog",
+			["animalza"] = "octopus",
+			["animalzb"] = "sheep",
+			["animalzc"] = "duck",
+			["animalzd"] = "alligator",
+			["animalze"] = "turtle",
+			["animalzf"] = "scorpion",
+			["animalzg"] = "crocodile",
+			["animalzh"] = "snail",
+			["animalzi"] = "whale",
+			["animalzj"] = "kitten",
+			["animalzk"] = "squirrel",
+			["animalzl"] = "rhino",
+			["animalzm"] = "cheetah",
+			["animalzn"] = "koala",
+			["animalzo"] = "fox",
+			["animalzp"] = "cat",
+			["animalzq"] = "bunny",
+			["animalzr"] = "flamingo",
+			["animalzs"] = "panda",
+			["animalzt"] = "hippo",
+			["animalzu"] = "cow",
+			["animalzv"] = "zebra",
+			["animalzw"] = "bettle",
+			["animalzx"] = "beetle",
+			["animalzy"] = "ostrich",
+			["animalzz"] = "parrot",
+			["animalzza"] = "deer",
+			["animalzzb"] = "snake",
+			["animalzzc"] = "horse",
+			["animalzzd"] = "puppy",
+			["animalzze"] = "bat",
+			["animalzzf"] = "fly",
+			["animalzzg"] = "owl",
+			["animalzzh"] = "wolf",
+			["animalzzi"] = "goat",
+			["animalzzj"] = "bird",
+			["animalzzk"] = "seal",
+			["animalzzl"] = "worm",
+			["animalzzm"] = "eagle",
+			["animalzzn"] = "dragon",
+			["animalzzo"] = "spider",
+			["animalzzp"] = "monkey",
+			["animalzzq"] = "hamster",
+			["animalzzr"] = "gorilla",
+			["animalzzs"] = "ladybug",
+			["animalzzt"] = "penguin",
+			["animalzzu"] = "goldfish",
+			["animalzzv"] = "seahorse",
+			["animalzzw"] = "butterfly",
+		
+			-- Vehicles
+			["vehicle"] = "bus",
+			["vehiclea"] = "minivan",
+			["vehicleb"] = "boat",
+			["vehiclec"] = "helicopter",
+			["vehicled"] = "tricycle",
+			["vehiclee"] = "train",
+			["vehiclef"] = "bike",
+			["vehicleg"] = "bicycle",
+			["vehicleh"] = "ship",
+			["vehiclei"] = "yacht",
+			["vehiclej"] = "skateboard",
+			["vehiclek"] = "truck",
+			["vehiclel"] = "airplane",
+			["vehiclem"] = "spaceship",
+			["vehiclen"] = "hot air balloon",
+		
+			-- Sports
+			["sport"] = "football",
+			["sporta"] = "hockey",
+			["sportb"] = "snowboard",
+			["sportc"] = "olympics",
+			["sportd"] = "volleyball",
+			["sporte"] = "basketball",
+		
+			-- Social Media
+			["social"] = "facebook",
+			["sociala"] = "roblox",
+		
+			-- Other Concepts & Places
+			["other"] = "mcdonalds",
+			["othera"] = "earth",
+			["otherb"] = "tree",
+			["otherc"] = "arm",
+			["otherd"] = "mouth",
+			["othere"] = "mountain",
+			["otherf"] = "circle",
+			["otherg"] = "pool",
+			["otherh"] = "hand",
+			["otheri"] = "chips",
+			["otherj"] = "juice",
+			["otherk"] = "space",
+			["otherl"] = "ocean",
+			["otherm"] = "brain",
+			["othern"] = "forest",
+			["othero"] = "sleeping",
+			["otherp"] = "house",
+			["otherq"] = "music",
+			["otherr"] = "moon",
+			["others"] = "boot",
+			["othert"] = "box",
+			["otheru"] = "pants",
+			["otherv"] = "alarm clock",
+			["otherw"] = "door knob",
+			["otherx"] = "elevator",
+			["othery"] = "rocket",
+			["otherz"] = "calendar",
+			["otherza"] = "leg",
+			["otherzb"] = "head",
+			["otherzc"] = "fire",
+			["otherzd"] = "toast",
+			["otherze"] = "farm",
+			["otherzf"] = "square",
+			["otherzg"] = "jail",
+			["otherzh"] = "wall",
+			["otherzi"] = "bomb",
+			["otherzj"] = "nail",
+			["otherzk"] = "snowball",
+			["otherzl"] = "ceiling",
+			["otherzm"] = "pacifier",
+			["otherzn"] = "pen",
+			["otherzo"] = "tire",
+			["otherzp"] = "seatbelt",
+			["otherzq"] = "heart",
+			["otherzr"] = "library",
+			["otherzs"] = "mail",
+			["otherzt"] = "snow",
+			["otherzu"] = "nose",
+			["otherzv"] = "iceberg",
+			["otherzw"] = "scissors",
+			["otherzy"] = "swing",
+			["otherzz"] = "cake",
+			["otherzza"] = "birthday",
+			["otherzzb"] = "bubbles",
+			["otherzzc"] = "ballon",
+			["otherzzd"] = "chain saw",
+			["otherzze"] = "gift",
+			["otherzzf"] = "fries",
+			["otherzzg"] = "egg",
+			["otherzzh"] = "bridge",
+			["otherzzi"] = "jetpack",
+			["otherzzj"] = "windmill",
+			["otherzzk"] = "sun",
+			["otherzzl"] = "running",
+			["otherzzm"] = "snowman",
+			["otherzzn"] = "television",
+			["otherzzo"] = "roller coaster",
+			["otherzzp"] = "beard",
+			["otherzzq"] = "chandelier",
+			["otherzzr"] = "socks",
+			["otherzzs"] = "chips",
+			["otherzzt"] = "money",
+			["otherzzu"] = "eyebrows",
+			["otherzzv"] = "bed",
+			["otherzzw"] = "rug",
+			["otherzzy"] = "water",
+			["otherzzz"] = "fence",
+			["otherzzza"] = "trampoline",
+			["otherzzzb"] = "cloud",
+			["otherzzzc"] = "sunburn",
+			["otherzzzd"] = "stork",
+			["otherzzze"] = "gum",
+			["otherzzzf"] = "bedroom",
+			["otherzzzg"] = "eiffel tower",
+			["otherzzzh"] = "lollipop",
+			["otherzzzi"] = "home",
+			["otherzzzj"] = "pencil",
+			["otherzzzk"] = "belt",
+			["otherzzzl"] = "tent",
+			["otherzzzm"] = "flag",
+			["otherzzzn"] = "kettle",
+			["otherzzzo"] = "rain",
+			["otherzzzp"] = "toothpaste",
+			["otherzzzq"] = "tower",
+			["otherzzzr"] = "ear",
+			["otherzzzs"] = "jump rope",
+			["otherzzzt"] = "sushi",
+			["otherzzzu"] = "school",
+			["otherzzzv"] = "flower",
+			["otherzzzw"] = "stairs",
+			["otherzzzx"] = "slide",
+			["otherzzzy"] = "feather",
+			["otherzzzz"] = "forehead",
+			["otherzzzza"] = "minecraft",
+			["otherzzzzb"] = "dance",
+			["otherzzzzc"] = "milk",
+			["otherzzzzd"] = "ice cream",
+			["otherzzzze"] = "japan",
+			["otherzzzzf"] = "eyes",
+			["otherzzzzg"] = "ice",
+			["otherzzzzh"] = "pancakes",
+			["otherzzzzi"] = "chocolate",
+			["otherzzzzj"] = "hotel",
+			["otherzzzzk"] = "motel",
+			["otherzzzzl"] = "fireworks",
+			["otherzzzzm"] = "lighthouse",
+			["otherzzzzn"] = "raindrop",
+			["otherzzzzo"] = "blizzard",
+			["otherzzzzp"] = "snowflake",
+			["otherzzzzq"] = "sand",
+			["otherzzzzr"] = "lightning",
+			["otherzzzzs"] = "face",
+			["otherzzzzt"] = "pizza",
+			["otherzzzzu"] = "heel",
+			["otherzzzzv"] = "volcano",
+			["otherzzzzw"] = "triangle",
+			["otherzzzzx"] = "seed",
+			["otherzzzzy"] = "waterdrop",
+			["otherzzzzz"] = "trash",
+			["otherzzzzza"] = "cactus",
+			["otherzzzzzb"] = "bone",
+			["otherzzzzzc"] = "sea",
+			["otherzzzzzd"] = "plant",
+			["otherzzzzze"] = "roof",
+			["otherzzzzzf"] = "towel",
+			["otherzzzzzg"] = "armpit",
+			["otherzzzzzh"] = "castle",
+			["otherzzzzzi"] = "playground",
+			["otherzzzzzj"] = "beehive",
+			["otherzzzzzk"] = "dog house",
+			["otherzzzzzl"] = "mushroom",
+			["otherzzzzzm"] = "grass",
+			["otherzzzzzn"] = "shell",
+			["otherzzzzzo"] = "jungle",
+			["otherzzzzzp"] = "road",
+			["otherzzzzzq"] = "sandwich",
+			["otherzzzzzr"] = "donut",
+			["otherzzzzzs"] = "cube",
+			["otherzzzzzt"] = "graveyard",
+			["otherzzzzzu"] = "skip",
+			["otherzzzzzv"] = "asteroid",
+			["otherzzzzzw"] = "night",
+			["otherzzzzzx"] = "star",
+			["otherzzzzzy"] = "meteor",
+			["otherzzzzzz"] = "cupcake",
+			["otherzzzzzza"] = "dress",
+			["otherzzzzzzb"] = "shoe",
+			["otherzzzzzzc"] = "jacket",
+			["otherzzzzzzd"] = "cape",
+			["otherzzzzzze"] = "zoo",
+			["otherzzzzzzf"] = "hug",
+			["otherzzzzzzg"] = "lips",
+			["otherzzzzzzh"] = "flat",
+			["otherzzzzzzi"] = "game",
+			["otherzzzzzzj"] = "wifi",
+			["otherzzzzzzk"] = "neck",
+			["otherzzzzzzl"] = "hair",
+			["otherzzzzzzm"] = "soda",
+			["otherzzzzzzn"] = "taco",
+			["otherzzzzzzo"] = "cave",
+			["otherzzzzzzp"] = "china",
+			["otherzzzzzzq"] = "candy",
+			["otherzzzzzzr"] = "bread",
+			["otherzzzzzzs"] = "igloo",
+			["otherzzzzzzt"] = "beans",
+			["otherzzzzzzu"] = "donuts",
+			["otherzzzzzzv"] = "church",
+			["otherzzzzzzw"] = "cheese",
+			["otherzzzzzzx"] = "burger",
+			["otherzzzzzzy"] = "island",
+			["otherzzzzzzz"] = "cookie",
+			["otherzzzzzzza"] = "hotdog",
+			["otherzzzzzzzb"] = "rainbow",
+			["otherzzzzzzzc"] = "eyebrow",
+			["otherzzzzzzzd"] = "england",
+			["otherzzzzzzze"] = "burrito",
+			["otherzzzzzzzf"] = "tornado",
+			["otherzzzzzzzg"] = "popcorn",
+			["otherzzzzzzzh"] = "waterfall",
+			["otherzzzzzzzi"] = "halloween",
+			["otherzzzzzzzj"] = "black hole",
+			["otherzzzzzzzk"] = "ferris wheel",
+			["otherzzzzzzzl"] = "amusement park",
+			["otherzzzzzzzm"] = "united states",
+			["otherzzzzzzzn"] = "pyramid",
+		}	
+local timetoguess = 0.4
+MainSection:NewTextBox("put amount of time to guess", "0.4 is the default time to guess", function(txt)
+	timetoguess = tonumber(txt)
+end)
 MainSection:NewToggle("guess the word", "guesses all possible words by looking at amount of letters and which are revealed", function(state)
 	getgenv().omgifudontstoprnbro2 = state
 	while true do 
 		task.wait()
-		-- more words will be added on im pretty sure this is a lot tho and maybe get it right 75% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
+		-- more words will be added on im pretty sure this is a lot tho and maybe get it right 95% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
 		-- if there arent any words that are on here but is in the game let me know at discord: jasminethecoolest2001
 		if not getgenv().omgifudontstoprnbro2 then
 			break
@@ -367,10 +853,7 @@ MainSection:NewToggle("guess the word", "guesses all possible words by looking a
 				}
 				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 				warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
-				if game:GetService("Players").LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("CustomChat"):FindFirstChild("ChatFrame"):FindFirstChild("ScrollingFrame"):WaitForChild("Frame"):FindFirstChild("playerName"):FindFirstChild("chat").Text == (game:GetService("Players").LocalPlayer.DisplayName .. " guessed the word!") then
-					Library.Notify("Word guessed", "Word guessed: " .. v, 5)
-				end
-				task.wait(0.4)
+				task.wait(timetoguess)
 			end
 		end
 	end
@@ -378,7 +861,7 @@ end)
 
 MainSection:NewToggle("guess all words", "guesses all words but takes so fucking long", function(state)
 	getgenv().omgifudontstoprnbro = state
-		-- more words will be added on im pretty sure this is a lot tho and maybe get it right 75% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
+		-- more words will be added on im pretty sure this is a lot tho and maybe get it right 95% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
 		-- if there arent any words that are on here but is in the game let me know at discord: jasminethecoolest2001
 	
 	for i = 1, 10 do
@@ -394,11 +877,11 @@ MainSection:NewToggle("guess all words", "guesses all words but takes so fucking
 		}
 		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 		warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
-		task.wait(0.4)
+		task.wait(timetoguess)
 	end
 end)
 MainSection:NewTextBox("put amount of letters here to guess", "put amount of letters here to guess", function(txt)
-		-- more words will be added on im pretty sure this is a lot tho and maybe get it right 75% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
+		-- more words will be added on im pretty sure this is a lot tho and maybe get it right 95% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
 		-- if there arent any words that are on here but is in the game let me know at discord: jasminethecoolest2001
 	
 	for i = 1, 10 do
@@ -412,7 +895,7 @@ MainSection:NewTextBox("put amount of letters here to guess", "put amount of let
 			}
 			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 			warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
-			task.wait(0.4)
+			task.wait(timetoguess)
 		end
 	end
 end)
@@ -420,7 +903,7 @@ MainSection:NewTextBox("put catergory of things to guess", "put catergory of thi
 	if txt == "help" then
 		Library.Notify("Here is all the current catergories.", "object, material, fruit, other, noun, emotions, animal, vehicle, sport, and social.", 25)
 	else
-			-- more words will be added on im pretty sure this is a lot tho and maybe get it right 75% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
+			-- more words will be added on im pretty sure this is a lot tho and maybe get it right 95% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
 			-- if there arent any words that are on here but is in the game let me know at discord: jasminethecoolest2001
 		
 		for i = 1, 10 do
@@ -434,13 +917,13 @@ MainSection:NewTextBox("put catergory of things to guess", "put catergory of thi
 				}
 				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 				warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
-				task.wait(0.4)
+				task.wait(timetoguess)
 			end
 		end
 	end
 end)
 MainSection:NewTextBox("put exactly what u see at the top for like __x__ or wtv", "put exactly what u see at the top for like __x__ or wtv to guess more accurate", function(txt)
-		-- more words will be added on im pretty sure this is a lot tho and maybe get it right 75% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
+		-- more words will be added on im pretty sure this is a lot tho and maybe get it right 95% of the time but soon i wanna make it a 100% or as close as i can so i will keep adding words eveyday until then :)
 		-- if there arent any words that are on here but is in the game let me know at discord: jasminethecoolest2001
 	
 	function matchPattern(pattern, word)
@@ -459,7 +942,7 @@ MainSection:NewTextBox("put exactly what u see at the top for like __x__ or wtv"
 			}
 			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("sendGuess"):FireServer(unpack(args))
 			warn(v, "this is in order btw so if its guessed the word on this one that means its the correct word")
-			task.wait(0.4)
+			task.wait(timetoguess)
 		end
 	end
 end)
