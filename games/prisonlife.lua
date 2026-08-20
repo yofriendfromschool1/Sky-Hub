@@ -407,6 +407,12 @@ end)
 HubsSection:NewButton("VG Hub", "60+", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 end)
+MainSection:NewButton("Solara Hub", "450+", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SH.lua'))()
+end)
+MainSection:NewButton("Solara Hub V3", "keyless ver", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SHV3'))()
+end)
 MainSection:NewButton("Ezhub", "130+ games", function()--
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'), true))()--
 end)
