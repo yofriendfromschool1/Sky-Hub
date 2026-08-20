@@ -410,6 +410,9 @@ end)
 MainSection:NewButton("Ezhub", "130+ games", function()--
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'), true))()--
 end)
+MainSection:NewButton("Pulse", "wwww", function()--
+	loadstring(game:HttpGet("https://prismsoftworks.com/pulse.lua"))()
+end)
 MainSection:NewButton("Highlight Hub", "key is hlontop t to open", function()--
 	script_key = "hlontop"
 	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/75128ac7f49f9c3017533547d8e13046.lua"))()
