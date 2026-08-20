@@ -403,6 +403,12 @@ MainSection:NewButton("UnNamed ESP", "UnNamed ESP", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
 	end)
 end)
+MainSection:NewButton("Solara Hub", "450+", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SH.lua'))()
+end)
+MainSection:NewButton("Solara Hub V3", "keyless ver", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SHV3'))()
+end)
 MainSection:NewButton("Ezhub", "130+ games", function()--
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'), true))()--
 end)
