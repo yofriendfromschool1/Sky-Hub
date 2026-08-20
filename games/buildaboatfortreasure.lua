@@ -404,6 +404,12 @@ end)
 HubsSection:NewButton("Psyhub", "idk", function()
 	loadstring(game:GetObjects("rbxassetid://3014051754")[1].Source)()
 end)
+MainSection:NewButton("Solara Hub", "450+", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SH.lua'))()
+end)
+MainSection:NewButton("Solara Hub V3", "keyless ver", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SHV3'))()
+end)
 MainSection:NewToggle("Auto Farm", "yay", function(state)
 	if state then
 			-- // Custom Settings
