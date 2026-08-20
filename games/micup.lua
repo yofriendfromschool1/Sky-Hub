@@ -316,6 +316,12 @@ end
 local Window = Library.CreateLib("Sky Hub", OptTheme)
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
+MainSection:NewButton("Solara Hub", "450+", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SH.lua'))()
+end)
+MainSection:NewButton("Solara Hub V3", "keyless ver", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SHV3'))()
+end)
 MainSection:NewButton("FE Antikick for mic", "if you dont have a mic you wont get kicked", function()
 	--Invisible function isnt mainly mine but i modified 100% (fixes + lag efficency + bad value changes + etc) of it everything else is mine
 	--credits: secment (aka respectfilteringenabled on discord), creator of invisible function is unknown
