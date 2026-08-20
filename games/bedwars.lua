@@ -319,6 +319,12 @@ local MainSection = Main:NewSection("Main")
 MainSection:NewButton("Ice Hub", "yuh", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMae17/Bedwars/main/IceHub"))()
 end)
+MainSection:NewButton("Solara Hub", "450+", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SH.lua'))()
+end)
+MainSection:NewButton("Solara Hub V3", "keyless ver", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SHV3'))()
+end)
 if iswave then
 	MainSection:NewButton("VapeV4 Wave", "yuh", function()
 		loadstring(game:HttpGet("https://github.com/MuhXd/Roblox-mobile-script/blob/main/VapeWave4.lua?raw=true"))();
