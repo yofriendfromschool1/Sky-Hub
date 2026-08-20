@@ -1297,6 +1297,12 @@ else
 	HubsSection:NewButton("Orca", "cool asff", function()--
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/Orca/latest.lua'), true))()
 	end)
+	HubsSection:NewButton("Solara Hub", "450+", function()--
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SH.lua'))()
+	end)
+	HubsSection:NewButton("Solara Hub", "Keyless", function()--
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/samuraa1/Solara-Hub/refs/heads/main/SHV3'))()
+	end)
 	HubsSection:NewButton("Hoho Hub", "Hoho", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/main/ScriptLoad.lua"))()
 	end)
