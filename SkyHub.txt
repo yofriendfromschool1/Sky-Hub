@@ -1292,7 +1292,7 @@ else
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau'), true))()
 	end)
 	HubsSection:NewButton("Sirius", "cool asl", function()--
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/refs/heads/main/Sirius/Sirius.txt'), true))()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/Sirius/Sirius.txt'), true))()
 	end)
 	HubsSection:NewButton("Orca", "cool asff", function()--
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/Orca/latest.lua'), true))()
