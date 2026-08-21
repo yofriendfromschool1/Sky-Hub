@@ -395,15 +395,15 @@ MainSection:NewDropdown("Teleports", "Teleports to Place", {
 	end
 end)
 MainSection:NewDropdown("Spawn/despawns Vehicle/Cars", "spawns/despawns cars", {
-	"Thunderbird",
+	"Camaro",
 	"Ladybug",
 	"Offroader",
 	"Golf Cart"
 }, function(currentOption2)
-	if currentOption2 == "Thunderbird" then
+	if currentOption2 == "Camaro" then
 		local args = {
 			[1] = "Spawn",
-			[2] = "Thunderbird"
+			[2] = "Camaro"
 		}
 		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Vehicle"):FireServer(unpack(args))
 	elseif currentOption2 == "Ladybug" then
