@@ -5,7 +5,7 @@
 <a href="https://github.com/yofriendfromschool1/Sky-Hub/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/yofriendfromschool1/Sky-Hub?color=2b9348"></a>
 <a href="https://github.com/yofriendfromschool1/Sky-Hub/blob/master/LICENSE"><img src="https://img.shields.io/github/license/yofriendfromschool1/Sky-Hub?color=2b9348" alt="License Badge"/></a>
 # Sky-Hub
-![img]([https://raw.githubsusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/Sky%20Hub.png](https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/Sky%20Hub.png?raw=true))
+![img]([https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/Sky%20Hub.png](https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/Sky%20Hub.png?raw=true))
 Welcome to Sky-Hub, a collection of scripts and tools primarily for Roblox games, developed by yofriendfromschool1. This repository aims to provide enhanced gameplay experiences and utilities for a wide range of popular Roblox titles.
 
 ## Key Features
