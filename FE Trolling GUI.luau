@@ -284,6 +284,7 @@ GUIS:AddButton({
     loadstring(game:HttpGet("https://veser.vip/"))()
     end
 })
+GUIS:AddButton({
 Title = "Hat Hub",
 Description = "hub for hats",
 Callback = function()
