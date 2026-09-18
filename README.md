@@ -124,4 +124,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/S
 [LICENSE](/LICENSE)
 
 ---
-*Last Updated: October 2, 2024*
+*Last Updated: July 5th, 2026*
